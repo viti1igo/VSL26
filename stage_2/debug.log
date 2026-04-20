@@ -1,0 +1,76 @@
+Loading datasets...
+Dataset split: Training: 938, Validation: 117, Test: 118
+Mapping datasets...
+Map:   0%|          | 0/938 [00:00<?, ? examples/s]Map:   1%|          | 8/938 [00:00<00:15, 61.03 examples/s]Map:   2%|▏         | 20/938 [00:00<00:12, 74.93 examples/s]Map:   3%|▎         | 30/938 [00:00<00:11, 81.71 examples/s]Map:   4%|▍         | 42/938 [00:00<00:10, 82.65 examples/s]Map:   6%|▌         | 54/938 [00:00<00:10, 81.14 examples/s]Map:   7%|▋         | 66/938 [00:01<00:22, 38.02 examples/s]Map:   8%|▊         | 76/938 [00:01<00:19, 44.76 examples/s]Map:   9%|▉         | 84/938 [00:01<00:17, 49.71 examples/s]Map:  10%|▉         | 92/938 [00:01<00:18, 45.25 examples/s]Map:  11%|█         | 102/938 [00:01<00:15, 52.30 examples/s]Map:  12%|█▏        | 110/938 [00:01<00:14, 57.34 examples/s]Map:  13%|█▎        | 122/938 [00:02<00:12, 66.78 examples/s]Map:  14%|█▍        | 130/938 [00:02<00:12, 62.97 examples/s]Map:  15%|█▌        | 142/938 [00:02<00:11, 69.80 examples/s]Map:  16%|█▌        | 152/938 [00:02<00:10, 74.27 examples/s]Map:  17%|█▋        | 160/938 [00:02<00:10, 74.42 examples/s]Map:  18%|█▊        | 172/938 [00:02<00:09, 81.63 examples/s]Map:  20%|█▉        | 184/938 [00:02<00:08, 83.94 examples/s]Map:  21%|██        | 198/938 [00:03<00:09, 81.90 examples/s]Map:  22%|██▏       | 210/938 [00:03<00:08, 85.44 examples/s]Map:  24%|██▎       | 222/938 [00:03<00:08, 80.53 examples/s]Map:  25%|██▍       | 234/938 [00:03<00:17, 41.25 examples/s]Map:  26%|██▌       | 246/938 [00:04<00:14, 48.70 examples/s]Map:  27%|██▋       | 256/938 [00:04<00:13, 52.45 examples/s]Map:  28%|██▊       | 264/938 [00:04<00:13, 51.29 examples/s]Map:  29%|██▉       | 276/938 [00:04<00:13, 49.36 examples/s]Map:  31%|███       | 288/938 [00:04<00:11, 56.09 examples/s]Map:  32%|███▏      | 296/938 [00:05<00:16, 39.33 examples/s]Map:  32%|███▏      | 304/938 [00:05<00:15, 39.87 examples/s]Map:  33%|███▎      | 314/938 [00:05<00:13, 47.40 examples/s]Map:  35%|███▍      | 326/938 [00:05<00:11, 55.10 examples/s]Map:  36%|███▌      | 338/938 [00:05<00:09, 65.93 examples/s]Map:  37%|███▋      | 350/938 [00:05<00:08, 70.96 examples/s]Map:  38%|███▊      | 360/938 [00:06<00:07, 72.36 examples/s]Map:  40%|███▉      | 372/938 [00:06<00:10, 56.15 examples/s]Map:  41%|████      | 382/938 [00:06<00:09, 60.43 examples/s]Map:  42%|████▏     | 392/938 [00:06<00:08, 64.98 examples/s]Map:  43%|████▎     | 404/938 [00:06<00:07, 72.64 examples/s]Map:  44%|████▍     | 414/938 [00:06<00:07, 72.68 examples/s]Map:  45%|████▍     | 422/938 [00:07<00:07, 69.74 examples/s]Map:  46%|████▌     | 432/938 [00:07<00:09, 53.39 examples/s]Map:  47%|████▋     | 440/938 [00:07<00:08, 57.34 examples/s]Map:  48%|████▊     | 448/938 [00:07<00:12, 39.32 examples/s]Map:  49%|████▉     | 458/938 [00:08<00:12, 36.97 examples/s]Map:  50%|████▉     | 468/938 [00:08<00:10, 45.03 examples/s]Map:  51%|█████     | 478/938 [00:08<00:08, 52.83 examples/s]Map:  52%|█████▏    | 490/938 [00:08<00:07, 61.53 examples/s]Map:  54%|█████▎    | 502/938 [00:08<00:06, 69.35 examples/s]Map:  54%|█████▍    | 510/938 [00:08<00:06, 70.43 examples/s]Map:  55%|█████▌    | 520/938 [00:08<00:05, 75.80 examples/s]Map:  57%|█████▋    | 532/938 [00:09<00:05, 77.07 examples/s]Map:  58%|█████▊    | 544/938 [00:09<00:04, 80.37 examples/s]Map:  59%|█████▉    | 554/938 [00:09<00:04, 81.49 examples/s]Map:  60%|██████    | 566/938 [00:09<00:04, 79.18 examples/s]Map:  61%|██████▏   | 576/938 [00:09<00:05, 61.88 examples/s]Map:  62%|██████▏   | 586/938 [00:09<00:05, 64.82 examples/s]Map:  63%|██████▎   | 594/938 [00:10<00:06, 54.58 examples/s]Map:  64%|██████▍   | 604/938 [00:10<00:06, 52.50 examples/s]Map:  65%|██████▌   | 614/938 [00:10<00:05, 58.49 examples/s]Map:  67%|██████▋   | 626/938 [00:10<00:04, 65.81 examples/s]Map:  68%|██████▊   | 638/938 [00:10<00:04, 73.58 examples/s]Map:  69%|██████▉   | 650/938 [00:10<00:03, 78.17 examples/s]Map:  71%|███████   | 662/938 [00:10<00:03, 85.16 examples/s]Map:  72%|███████▏  | 674/938 [00:11<00:03, 86.65 examples/s]Map:  73%|███████▎  | 684/938 [00:11<00:03, 83.69 examples/s]Map:  74%|███████▍  | 694/938 [00:11<00:03, 79.97 examples/s]Map:  75%|███████▌  | 706/938 [00:11<00:02, 82.19 examples/s]Map:  76%|███████▋  | 716/938 [00:11<00:02, 82.82 examples/s]Map:  78%|███████▊  | 728/938 [00:11<00:02, 84.74 examples/s]Map:  79%|███████▉  | 740/938 [00:11<00:02, 87.75 examples/s]Map:  80%|████████  | 752/938 [00:11<00:02, 91.05 examples/s]Map:  81%|████████▏ | 764/938 [00:12<00:01, 90.59 examples/s]Map:  83%|████████▎ | 776/938 [00:12<00:01, 94.29 examples/s]Map:  84%|████████▍ | 788/938 [00:12<00:02, 71.36 examples/s]Map:  85%|████████▌ | 798/938 [00:12<00:01, 76.06 examples/s]Map:  86%|████████▌ | 808/938 [00:12<00:01, 77.85 examples/s]Map:  87%|████████▋ | 820/938 [00:12<00:01, 81.25 examples/s]Map:  89%|████████▊ | 832/938 [00:12<00:01, 84.40 examples/s]Map:  90%|████████▉ | 844/938 [00:13<00:01, 87.89 examples/s]Map:  91%|█████████▏| 856/938 [00:13<00:01, 67.19 examples/s]Map:  92%|█████████▏| 864/938 [00:13<00:01, 60.96 examples/s]Map:  93%|█████████▎| 874/938 [00:13<00:01, 63.36 examples/s]Map:  94%|█████████▍| 886/938 [00:13<00:00, 72.73 examples/s]Map:  96%|█████████▌| 898/938 [00:13<00:00, 77.39 examples/s]Map:  97%|█████████▋| 910/938 [00:14<00:00, 81.36 examples/s]Map:  98%|█████████▊| 922/938 [00:14<00:00, 83.29 examples/s]Map: 100%|█████████▉| 934/938 [00:14<00:00, 80.24 examples/s]Map: 100%|██████████| 938/938 [00:14<00:00, 65.31 examples/s]
+Map:   0%|          | 0/117 [00:00<?, ? examples/s]Map:   5%|▌         | 6/117 [00:00<00:02, 47.01 examples/s]Map:  10%|█         | 12/117 [00:00<00:02, 41.90 examples/s]Map:  19%|█▉        | 22/117 [00:00<00:01, 59.80 examples/s]Map:  27%|██▋       | 32/117 [00:00<00:01, 57.65 examples/s]Map:  38%|███▊      | 44/117 [00:00<00:01, 69.94 examples/s]Map:  46%|████▌     | 54/117 [00:00<00:00, 70.62 examples/s]Map:  55%|█████▍    | 64/117 [00:00<00:00, 72.60 examples/s]Map:  63%|██████▎   | 74/117 [00:01<00:00, 74.17 examples/s]Map:  72%|███████▏  | 84/117 [00:01<00:00, 72.98 examples/s]Map:  82%|████████▏ | 96/117 [00:01<00:00, 78.12 examples/s]Map:  92%|█████████▏| 108/117 [00:01<00:00, 81.84 examples/s]Map: 100%|██████████| 117/117 [00:01<00:00, 82.65 examples/s]Map: 100%|██████████| 117/117 [00:01<00:00, 72.37 examples/s]
+Map:   0%|          | 0/118 [00:00<?, ? examples/s]Map:   7%|▋         | 8/118 [00:00<00:01, 62.23 examples/s]Map:  17%|█▋        | 20/118 [00:00<00:01, 75.12 examples/s]Map:  27%|██▋       | 32/118 [00:00<00:01, 68.62 examples/s]Map:  37%|███▋      | 44/118 [00:00<00:00, 79.24 examples/s]Map:  46%|████▌     | 54/118 [00:00<00:00, 74.21 examples/s]Map:  56%|█████▌    | 66/118 [00:00<00:00, 79.29 examples/s]Map:  66%|██████▌   | 78/118 [00:01<00:00, 68.77 examples/s]Map:  73%|███████▎  | 86/118 [00:01<00:00, 58.24 examples/s]Map:  80%|███████▉  | 94/118 [00:01<00:00, 61.93 examples/s]Map:  86%|████████▋ | 102/118 [00:01<00:00, 61.51 examples/s]Map:  93%|█████████▎| 110/118 [00:01<00:00, 61.26 examples/s]Map: 100%|██████████| 118/118 [00:01<00:00, 63.96 examples/s]Map: 100%|██████████| 118/118 [00:01<00:00, 66.61 examples/s]
+Preparing batch...
+
+====== BATCH CONTENTS ======
+input_ids            dtype=torch.int64 shape=(2, 512) min=0.000e+00 max=4.111e+04 nan=False inf=False
+attention_mask       dtype=torch.int64 shape=(2, 512) min=0.000e+00 max=1.000e+00 nan=False inf=False
+bbox                 dtype=torch.int64 shape=(2, 512, 4) min=0.000e+00 max=8.450e+02 nan=False inf=False
+pixel_values         dtype=torch.float32 shape=(2, 3, 224, 224) min=-6.235e-01 max=1.000e+00 nan=False inf=False
+labels               dtype=torch.int64 shape=(2, 512) min=-1.000e+02 max=5.000e+00 nan=False inf=False
+edge_index           dtype=torch.int64 shape=(2, 2971) min=0.000e+00 max=9.280e+02 nan=False inf=False
+spatial_features     dtype=torch.float32 shape=(2, 512, 8) min=0.000e+00 max=1.000e+00 nan=False inf=False
+
+Loading model...
+Loading weights:   0%|          | 0/212 [00:00<?, ?it/s]Loading weights: 100%|██████████| 212/212 [00:00<00:00, 9885.96it/s]
+[1mLayoutLMv3GATForTokenClassification LOAD REPORT[0m from: microsoft/layoutlmv3-base
+Key                                | Status     | 
+-----------------------------------+------------+-
+layoutlmv3.embeddings.position_ids | UNEXPECTED | 
+proj_norm.bias                     | MISSING    | 
+norm3.bias                         | MISSING    | 
+gat2.lin_r.weight                  | MISSING    | 
+gat2.lin_l.bias                    | MISSING    | 
+gat3.lin_r.weight                  | MISSING    | 
+spatial_proj.weight                | MISSING    | 
+gat1.bias                          | MISSING    | 
+classifier.bias                    | MISSING    | 
+gat1.att                           | MISSING    | 
+classifier.weight                  | MISSING    | 
+norm2.weight                       | MISSING    | 
+norm1.bias                         | MISSING    | 
+proj.bias                          | MISSING    | 
+spatial_proj.bias                  | MISSING    | 
+gat1.lin_l.weight                  | MISSING    | 
+input_norm.weight                  | MISSING    | 
+gat2.lin_r.bias                    | MISSING    | 
+gat1.lin_r.weight                  | MISSING    | 
+gat1.lin_l.bias                    | MISSING    | 
+proj_norm.weight                   | MISSING    | 
+norm1.weight                       | MISSING    | 
+gat3.bias                          | MISSING    | 
+gat3.lin_l.weight                  | MISSING    | 
+gat3.lin_r.bias                    | MISSING    | 
+norm3.weight                       | MISSING    | 
+input_norm.bias                    | MISSING    | 
+gat3.lin_l.bias                    | MISSING    | 
+gat2.lin_l.weight                  | MISSING    | 
+gat2.att                           | MISSING    | 
+gat3.att                           | MISSING    | 
+gat2.bias                          | MISSING    | 
+norm2.bias                         | MISSING    | 
+proj.weight                        | MISSING    | 
+gat1.lin_r.bias                    | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+
+Running forward pass...
+
+=== Forward step 0 ===
+  [nan-check]              x_pre_gat shape=(1024, 256) min=-7.592e-01 max=6.726e+00 nan=False inf=False
+  [nan-check]               gat1_out shape=(1024, 1024) min=nan max=nan nan=True inf=False
+  [nan-check]               gat2_out shape=(1024, 1024) min=nan max=nan nan=True inf=False
+  [nan-check]               gat3_out shape=(1024, 1024) min=nan max=nan nan=True inf=False
+  [nan-check]           final_logits shape=(2, 512, 6) min=nan max=nan nan=True inf=False
+
+====== FORWARD OUTPUT ======
+Loss: nan
+Logits nan: True inf: False min: nan max: nan
+
+DIAGNOSIS COMPLETE
