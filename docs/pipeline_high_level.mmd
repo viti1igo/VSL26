@@ -1,0 +1,17 @@
+flowchart TD
+    A["Raw Vietnamese Prescription Image<br/>JPG/PNG"] --> B["Stage 1: OCR<br/>EasyOCR detection + VietOCR recognition"]
+    B -->|"words + bounding boxes"| C["Stage 2: NER<br/>LayoutLMv3 fine-tuned on VAIPE-P<br/>F1 0.9911<br/>+ sliding window inference"]
+    C -->|"6 entity types"| D["Stage 2.5: Spatial Association<br/>Bounding box proximity matching<br/>drug ↔ quantity ↔ usage"]
+    D -->|"structured drugs list"| E["Stage 3: Medicine Mapper<br/>SQLite KB: 4760+ drugs<br/>Fuzzy matching + brand aliases"]
+    E -->|"drug + clinical purpose"| F["Stage 4: Gloss Generation<br/>4-section template per drug<br/>+ universal closing"]
+    F -->|"gloss token sequences"| G["Stage 5: VSL Footage Index<br/>Token → clip ID lookup"]
+    G -->|"clip ID list"| H["Stage 6: Video Assembly<br/>Concatenate raw VSL clips"]
+    H --> I["Final VSL Video<br/>For deaf children"]
+    I --> J["Stage 7: User Evaluation<br/>Comprehension study<br/>with deaf children"]
+
+    classDef done fill:#d8f5dd,stroke:#2f8f46,color:#0f3d1c,stroke-width:2px;
+    classDef progress fill:#fff3bf,stroke:#d6a800,color:#4a3800,stroke-width:2px;
+    classDef blocked fill:#ffd6d6,stroke:#c92a2a,color:#5a0b0b,stroke-width:2px;
+    class A,B,C,D,E,F,G done;
+    class H progress;
+    class J blocked;
