@@ -1,28 +1,47 @@
-# VSL26: Vietnamese Prescription to Sign Language Pipeline
+# VSL26: Vietnamese Prescription to Sign Language Gloss Pipeline
 
-## Overview
+VSL26 is a research codebase for converting Vietnamese prescription images into
+structured Vietnamese Sign Language (VSL) glosses for expert evaluation. The
+current study compares a classical document-AI baseline against a vision-language
+model (VLM) extraction path, then sends both paths through the same medication
+mapping and gloss generation logic.
 
-VSL26 is an end-to-end research pipeline that turns a Vietnamese prescription image into structured Vietnamese Sign Language (VSL) gloss output for deaf children. The system performs OCR, prescription NER, drug knowledge-base matching, child-friendly clinical explanation, and VSL gloss generation. The research goal is an evaluation study: measure whether children understand medication instructions better with VSL video than with paper prescriptions. The pipeline is infrastructure for that study, so correctness, traceability, and a locked pilot scope matter more than model comparison.
+The current evaluation target is expert review of generated gloss quality. Video
+assembly remains downstream infrastructure and is not the active evaluation
+method for this branch.
 
-## Pipeline Stages
+## Current Research Frame
+
+- Input: Vietnamese prescription images from VAIPE, archive/screenshot samples,
+  and real-world prescription photos.
+- Baseline: EasyOCR/VietOCR text extraction followed by LayoutLMv3 NER.
+- Proposed method: VLM direct structured extraction from the prescription image.
+- Shared downstream path: drug normalization, knowledge-base mapping, safety-aware
+  instruction simplification, and VSL gloss generation.
+- Evaluation: blinded or randomized expert survey with image plus generated gloss,
+  one required 1-5 score, and one optional free-text comment.
+
+See [docs/RESEARCH_PROTOCOL.md](docs/RESEARCH_PROTOCOL.md) for the study design.
+
+## Architecture
 
 ```mermaid
 flowchart TD
-    A["Raw Vietnamese Prescription Image<br/>JPG/PNG"] --> B["Stage 1: OCR<br/>EasyOCR detection + VietOCR recognition"]
-    B --> C["Stage 2: NER<br/>LayoutLMv3 fine-tuned on VAIPE-P<br/>F1 0.9911 + sliding window inference"]
-    C --> D["Stage 2.5: Spatial Association<br/>drug ↔ quantity ↔ usage by bounding-box proximity"]
-    D --> E["Stage 3: Medicine Mapper<br/>SQLite KB + fuzzy matching + aliases"]
-    E --> F["Stage 4: Gloss Generation<br/>4-section template per drug + universal closing"]
-    F --> G["Stage 5: VSL Footage Index<br/>gloss token → clip ID"]
-    G --> H["Stage 6: Video Assembly<br/>concatenate VSL clips"]
-    H --> I["Final VSL Video<br/>for deaf children"]
+    A["Prescription image"] --> B["Stage 1 OCR<br/>stages/stage_1_ocr"]
+    B --> C["Stage 2 baseline extraction<br/>OCR text + LayoutLMv3 NER"]
+    A --> D["Stage 2 VLM extraction<br/>direct structured JSON"]
+    C --> E["Shared mapper input"]
+    D --> E
+    E --> F["Stage 3 mapping/gloss<br/>MedicineMapper + KB"]
+    F --> G["Stage 4 evaluation<br/>comparison + expert survey"]
 ```
 
-Status: Stages 1-5 are implemented for the locked pilot set. Stage 6 needs final footage IDs and assembly. Stage 7 is the user evaluation study.
+Detailed architecture and data contracts are documented in
+[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ## Setup
 
-Python 3.11 with a virtual environment is recommended.
+Python 3.11 is recommended.
 
 ```bash
 python3 -m venv .venv
@@ -30,93 +49,109 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-OCR uses EasyOCR for CRAFT text detection and VietOCR for Vietnamese recognition. PaddleOCR was tested and replaced because Vietnamese diacritics were unreliable on the prescription images.
-
-The LayoutLMv3 Stage 2 checkpoint must be placed at `./models/`. The checkpoint is not committed because it is large. The expected directory contains files such as `config.json`, `model.safetensors`, `processor_config.json`, `tokenizer.json`, `tokenizer_config.json`, and `training_args.bin`.
-
-The VAIPE-P dataset is available at [Kaggle: vaipepill2022](https://www.kaggle.com/datasets/tommyngx/vaipepill2022). Extract only the prescription subset when possible:
+Create a local `.env` from `.env.example` when using the VLM path:
 
 ```bash
-unzip -o vaipepill2022.zip 'public_train/prescription/*' -d .
+cp .env.example .env
 ```
 
-## Quickstart
+Do not commit `.env`, model checkpoints, downloaded datasets, or generated survey
+images/results.
 
-Run the locked four-prescription pilot gloss test:
+## Required Local Artifacts
+
+The repository intentionally does not commit large or private artifacts.
+
+- `models/`: LayoutLMv3 checkpoint files such as `config.json`,
+  `model.safetensors`, tokenizer files, and `training_args.bin`.
+- `public_train/` or `data/vaipepill2022/`: VAIPE-P dataset when running
+  training or VAIPE-based inference.
+- `vaipe_drugs.db`: SQLite medication knowledge base.
+- `.env`: local OpenAI API credentials for VLM extraction or KB enrichment.
+
+## Common Commands
+
+Run the locked gloss smoke test:
 
 ```bash
 python test_gloss_engine.py
 ```
 
-Run one full end-to-end OCR → NER → Mapper test:
+Run one OCR to NER to mapper smoke test:
 
 ```bash
 python test_full_pipeline.py
 ```
 
-Create the video-editor handoff workbook:
+Compare extraction methods on one image:
 
 ```bash
-python export_pilot_video_excel.py
+python compare_extraction_methods.py --image /path/to/prescription.png --method both
 ```
 
-## Project Structure
+Run only the VLM extraction path:
 
-Core pipeline files:
+```bash
+python compare_extraction_methods.py --image /path/to/prescription.png --method vlm
+```
 
-- `ocr_engine.py` — Stage 1 OCR using EasyOCR detection and VietOCR recognition.
-- `inference.py` — Stage 2 LayoutLMv3 NER inference, sliding-window handling, cleanup, and spatial drug-usage association.
-- `medicine_mapper.py` — Stage 3-4 drug KB matching, structured gloss generation, and VSL token lookup.
-- `test_full_pipeline.py` — single-prescription end-to-end smoke test.
-- `test_gloss_engine.py` — locked four-prescription pilot gloss validation and manifest generation.
+Create the expert survey package from prepared manifests:
 
-Useful utilities:
+```bash
+python export_expert_survey.py
+```
 
-- `count_drugs.py` — counts and normalizes drug entities from VAIPE-P labels.
-- `build_pilot_subset.py` — finds prescriptions eligible for the four-drug pilot scope.
-- `build_synthetic_dataset.py` — builds batch drug-diagnosis rows from NER exports.
-- `export_ner_dataset.py` — exports all labeled VAIPE-P entities for inspection.
-- `export_test_predictions.py` — exports OCR+NER predictions for public test prescriptions.
-- `merge_test_predictions.py` — merges adjacent token predictions into phrase rows.
-- `import_atc_dataset.py` — imports WHO ATC level-5 drug names into the SQLite KB.
-- `update_needed_kb.py` — translates only safe matched drugs needed by project data.
-- `prepare_unresolved_drug_review.py` — builds the unresolved-drug manual review queue.
-- `build_final_drug_review_actions.py` — builds final human-review action sheets.
-- `apply_verified_decisions_wave1.py` — applies verified Wave 1 KB decisions.
-- `export_pilot_video_excel.py` — creates the pilot video-editing Excel workbook.
+See [docs/OPERATIONS.md](docs/OPERATIONS.md) for cloud training, local
+functional checks, and survey generation commands.
 
-Diagnostic and research-audit files:
+## Project Map
 
-- `debug_annotation_format.py` — inspects VAIPE-P annotation granularity.
-- `debug_gt_vs_ocr.py` — compares NER behavior on ground-truth vs OCR inputs.
-- `screen_pilot_replacements.py` — screens pilot replacement candidates.
-- `wave1_validation.py` — validates KB cleanup effects.
-- `test.ipynb` — original LayoutLMv3 training notebook.
+Stage-organized implementation:
 
-## Pilot Study Scope
+- `stages/stage_1_ocr/ocr_engine.py`: EasyOCR/VietOCR OCR.
+- `stages/stage_2_extraction/inference.py`: LayoutLMv3 NER inference, sliding
+  windows, GAT checkpoint compatibility, and entity parsing.
+- `stages/stage_2_extraction/llm_extractor.py`: VLM direct prescription
+  extraction with strict JSON output.
+- `stages/stage_3_mapping/medicine_mapper.py`: medication KB matching,
+  drug-purpose mapping, gloss generation, and VSL token lookup.
+- `stages/stage_4_evaluation/compare_extraction_methods.py`: shared comparison
+  harness for baseline and VLM.
+- `stages/stage_4_evaluation/export_expert_survey.py`: expert survey package
+  generation.
+- `stages/stage_4_evaluation/prepare_vaipe_sample.py`: reproducible VAIPE image
+  sampling for survey preparation.
 
-The locked pilot uses four single-drug prescriptions:
+Compatibility wrappers remain at the repository root (`ocr_engine.py`,
+`inference.py`, `medicine_mapper.py`, etc.) so existing scripts and notebooks do
+not break.
 
-- Amlodipine: `VAIPE_P_TRAIN_904`
-- Enalapril: `VAIPE_P_TRAIN_457`
-- Amoxicillin: `VAIPE_P_TRAIN_871`
-- Paracetamol: `VAIPE_P_TRAIN_877`
+Training and validation:
 
-Pipeline status:
+- `training/train_layoutlmv3_vaipe.py`: safe VAIPE-only LayoutLMv3 retraining.
+- `training/functional_extraction_check.py`: functional check on unlabeled survey
+  images.
+- `training/run_overnight_venus13.sh`: unattended iHPC/Venus13 training runner.
+- `training/README_venus13_retrain.md`: step-by-step retraining runbook.
 
-- ✅ Engineering pipeline complete for the locked pilot prescriptions.
-- 🔧 VSL footage assignment pending for placeholder gloss tokens.
-- ⏸️ User evaluation with deaf children pending.
+Research docs:
 
-## Research Findings
+- [AGENTS.md](AGENTS.md): repository guidance for future agents and maintainers.
+- [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md): system design and data contracts.
+- [docs/RESEARCH_PROTOCOL.md](docs/RESEARCH_PROTOCOL.md): paper framing and
+  evaluation design.
+- [docs/EXPERT_SURVEY.md](docs/EXPERT_SURVEY.md): expert survey build and review
+  protocol.
+- [docs/OPERATIONS.md](docs/OPERATIONS.md): reproducible commands and artifact
+  handling.
 
-- LayoutLMv3 inference initially lost drug rows because `max_length=224` truncated long prescriptions. Sliding-window inference fixed this without retraining.
-- Subword predictions must be aggregated back to word/entity level using `encoding.word_ids()`.
-- Bounding boxes must be normalized to `[0, 1000]`; raw pixel boxes degrade LayoutLMv3 spatial embeddings.
-- Vietnamese prescription annotations are phrase-level, not word-level, so OCR phrases should generally be passed directly to NER.
-- Vietnamese prescriptions frequently use brand names rather than generic names, requiring alias-heavy KB mapping.
-- Traditional Vietnamese medicines appear often enough to need explicit handling instead of forcing Western ATC mappings.
+## Known Findings
 
-## Citing / Contact
-
-This repository is research infrastructure for the VSL26 Vietnamese prescription-to-VSL evaluation study. Cite the VAIPE-P dataset and the WHO ATC/DDD source where relevant. Contact the project maintainer before using generated pilot materials in participant-facing evaluation.
+- LayoutLMv3 is strong on VAIPE-style layouts but brittle on unseen prescription
+  formats.
+- OCR quality and layout shift are the main failure points for the baseline.
+- VLM extraction improves layout robustness but must be evaluated through a
+  shared downstream mapper to avoid moving the target.
+- The research contribution should be framed around accessible medication
+  communication, auditable extraction-to-gloss mapping, and expert-validated VSL
+  gloss quality rather than claiming OCR novelty alone.

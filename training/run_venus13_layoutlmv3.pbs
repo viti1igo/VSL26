@@ -1,0 +1,18 @@
+#!/bin/bash
+#PBS -N vsl26_layoutlmv3
+#PBS -q gpuq
+#PBS -l select=1:host=venus13:ncpus=8:mem=48gb:ngpus=1
+#PBS -l walltime=06:00:00
+#PBS -j oe
+#PBS -o logs/vsl26_layoutlmv3.$PBS_JOBID.log
+
+set -euo pipefail
+
+cd "$PBS_O_WORKDIR"
+mkdir -p logs models
+
+echo "Host: $(hostname)"
+echo "Working directory: $(pwd)"
+echo "CUDA_VISIBLE_DEVICES=${CUDA_VISIBLE_DEVICES:-unset}"
+
+bash training/run_overnight_venus13.sh

@@ -3,6 +3,8 @@
 .venv/
 venv/
 env/
+.venv-local-eval/
+.venv-venus13/
 
 # Python caches
 __pycache__/
@@ -30,6 +32,13 @@ vaipe_drugs.db.backup_*
 
 # Downloaded/reference data artifacts
 data/
+survey_input/
+expert_survey/images/
+expert_survey/results_json/
+expert_survey/*.csv
+expert_survey/*.xlsx
+expert_survey/*.html
+layoutlmv3_review/
 
 # Generated outputs, with selected research artifacts kept
 results/*
