@@ -38,9 +38,28 @@ ID2LABEL = {i: label for i, label in enumerate(PRESCRIPTION_LABELS)}
 LABEL2ID = {label: i for i, label in enumerate(PRESCRIPTION_LABELS)}
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-CHECKPOINT_PATH = Path(
-    os.getenv("VSL_LAYOUTLMV3_CHECKPOINT", str(REPO_ROOT / "models"))
-).expanduser()
+
+
+def _resolve_checkpoint_path() -> Path:
+    env_path = os.getenv("VSL_LAYOUTLMV3_CHECKPOINT")
+    if env_path:
+        return Path(env_path).expanduser()
+
+    models_dir = REPO_ROOT / "models"
+    latest_file = models_dir / "latest_layoutlmv3_vaipe_retrain.txt"
+    if latest_file.exists():
+        latest_text = latest_file.read_text(encoding="utf-8").strip()
+        if latest_text:
+            latest_path = Path(latest_text).expanduser()
+            if not latest_path.is_absolute():
+                latest_path = REPO_ROOT / latest_path
+            if latest_path.exists():
+                return latest_path
+
+    return models_dir
+
+
+CHECKPOINT_PATH = _resolve_checkpoint_path()
 MAX_LENGTH = 224
 DEFAULT_WINDOW_SIZE = 192
 DEFAULT_STRIDE = 128

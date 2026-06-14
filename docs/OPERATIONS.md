@@ -5,6 +5,14 @@ iHPC/Venus13 training.
 
 ## Environment
 
+Install Git LFS if you need the committed retrained checkpoint:
+
+```bash
+brew install git-lfs
+git lfs install
+git lfs pull
+```
+
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
@@ -148,7 +156,7 @@ Expected commit scope:
 Excluded commit scope:
 
 - `.env`
-- model checkpoints
+- duplicate or experimental model checkpoints not intentionally tracked by LFS
 - downloaded datasets
 - virtualenvs
 - logs

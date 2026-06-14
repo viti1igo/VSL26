@@ -25,6 +25,11 @@ Supported labels:
 The baseline is useful for VAIPE-style prescriptions and as a classical document
 understanding comparator. It is expected to degrade on unseen layouts.
 
+The current retrained checkpoint is tracked through Git LFS at
+`models/layoutlmv3_vaipe_retrain_20260611_085133/final/`. If
+`VSL_LAYOUTLMV3_CHECKPOINT` is unset, inference reads
+`models/latest_layoutlmv3_vaipe_retrain.txt` and loads that checkpoint.
+
 ### Proposed Method: VLM Direct Extraction
 
 1. `stages/stage_2_extraction/llm_extractor.py` sends the prescription image to the configured vision

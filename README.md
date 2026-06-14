@@ -43,6 +43,18 @@ Detailed architecture and data contracts are documented in
 
 Python 3.11 is recommended.
 
+Install Git LFS before cloning or pulling if you need the included retrained
+LayoutLMv3 checkpoint:
+
+```bash
+brew install git-lfs
+git lfs install
+git clone https://github.com/viti1igo/VSL26.git
+cd VSL26
+git checkout luke-pilot-pipeline-2026-04-30
+git lfs pull
+```
+
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
@@ -60,10 +72,16 @@ images/results.
 
 ## Required Local Artifacts
 
-The repository intentionally does not commit large or private artifacts.
+The repository commits the retrained LayoutLMv3 checkpoint through Git LFS:
 
-- `models/`: LayoutLMv3 checkpoint files such as `config.json`,
-  `model.safetensors`, tokenizer files, and `training_args.bin`.
+- `models/layoutlmv3_vaipe_retrain_20260611_085133/final/`
+- `models/latest_layoutlmv3_vaipe_retrain.txt`
+
+`inference.py` reads `models/latest_layoutlmv3_vaipe_retrain.txt` automatically
+when `VSL_LAYOUTLMV3_CHECKPOINT` is not set.
+
+Other large or private artifacts remain local-only.
+
 - `public_train/` or `data/vaipepill2022/`: VAIPE-P dataset when running
   training or VAIPE-based inference.
 - `vaipe_drugs.db`: SQLite medication knowledge base.

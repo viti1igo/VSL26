@@ -1,0 +1,3 @@
+models/**/*.safetensors filter=lfs diff=lfs merge=lfs -text
+models/**/*.bin filter=lfs diff=lfs merge=lfs -text
+models/layoutlmv3_vaipe_retrain_20260611_085133/final/** filter=lfs diff=lfs merge=lfs -text

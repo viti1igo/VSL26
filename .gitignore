@@ -18,7 +18,11 @@ __pycache__/
 .dataset_path
 
 # Large model and dataset artifacts
-models/
+models/*
+!models/latest_layoutlmv3_vaipe_retrain.txt
+!models/layoutlmv3_vaipe_retrain_20260611_085133/
+!models/layoutlmv3_vaipe_retrain_20260611_085133/final/
+!models/layoutlmv3_vaipe_retrain_20260611_085133/final/**
 stage_2/
 public_train/
 public_test/

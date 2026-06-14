@@ -18,8 +18,11 @@ The comparison is:
 
 ## Safe Working Rules
 
-- Do not commit `.env`, API keys, local virtualenvs, model checkpoints, VAIPE
-  dataset folders, survey images, or generated survey result files.
+- Do not commit `.env`, API keys, local virtualenvs, VAIPE dataset folders,
+  survey images, or generated survey result files.
+- Only commit model checkpoints when they are deliberately tracked through Git
+  LFS. The current intended checkpoint is
+  `models/layoutlmv3_vaipe_retrain_20260611_085133/final/`.
 - Keep generated outputs under ignored locations such as `results/`,
   `survey_input/`, `expert_survey/images/`, and `expert_survey/results_json/`.
 - When changing extraction logic, keep both methods feeding the same mapper input
