@@ -1,0 +1,364 @@
+﻿question_id,image_file,gloss_text,score_prompt,comment_prompt
+Q001,Q001.png,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + Diệt vi khuẩn + Giúp bớt viêm + Dùng theo đơn bác sĩ
+thuốc số 2: bác sĩ kê thuốc + số 2 + giúp bạn + cảm thấy + dễ chịu hơn
+thuốc số 3: bác sĩ kê thuốc + số 3 + người bị cao huyết áp + người bị đau ngực do tim
+
+Dùng như nào:
+thuốc số 1: uống + 2 viên + buổi sáng + và + 2 viên + buổi chiều + mỗi ngày
+thuốc số 2: uống + 1 viên + buổi sáng + và + 1 viên + buổi chiều + mỗi ngày
+thuốc số 3: uống + 1 viên + buổi sáng + mỗi ngày
+
+Lưu ý:
+thuốc số 1: Uống sau ăn + Uống đủ liều + Không bỏ thuốc + Báo người lớn nếu mệt nhiều
+thuốc số 2: mỗi lần uống + cách nhau + 4-6 tiếng + không quá + 4 viên + mỗi ngày + uống nhiều + hại gan
+thuốc số 3: uống đúng giờ + không tự ý ngừng + cẩn thận chóng mặt",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q002,Q002.png,"Dùng cho:
+bác sĩ kê thuốc + số 1 + dùng cho người bị tiểu đường típ 2 + giúp hạ đường máu
+
+Dùng như nào:
+uống + 1 viên + buổi sáng + mỗi ngày
+
+Lưu ý:
+uống sau ăn + tránh rượu bia + báo bác sĩ nếu khó thở hoặc mệt lả",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q003,Q003.png,"Dùng cho:
+bác sĩ kê thuốc + số 1 + dùng cho người bị tiểu đường típ 2 + giúp hạ đường máu
+
+Dùng như nào:
+uống + 1 viên + buổi sáng + mỗi ngày
+
+Lưu ý:
+uống sau ăn + tránh rượu bia + báo bác sĩ nếu khó thở hoặc mệt lả",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q004,Q004.png,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + Giúp đi tiểu dễ hơn + Giúp hạ huyết áp
+thuốc số 2: bác sĩ kê thuốc + số 2 + trị nhiễm khuẩn + trị amip + trị Giardia
+
+Dùng như nào:
+thuốc số 1: uống + 1 viên + buổi sáng + mỗi ngày
+thuốc số 2: uống + 2 viên + buổi sáng + và + 2 viên + buổi chiều + mỗi ngày
+
+Lưu ý:
+thuốc số 1: Dễ chóng mặt + Đứng lên chậm + Ngất phải đi khám
+thuốc số 2: không uống rượu bia + uống đúng giờ + đủ liều + báo bác sĩ nếu có bệnh gan",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q005,Q005.png,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + Dùng cho nhiễm khuẩn do vi khuẩn.
+thuốc số 2: bác sĩ kê thuốc + số 2 + Dùng khi bác sĩ kê để giảm viêm và dị ứng nặng.
+thuốc số 3: bác sĩ kê thuốc + số 3 + giúp bạn + cảm thấy + dễ chịu hơn
+
+Dùng như nào:
+thuốc số 1: uống + 2 viên + buổi sáng + và + 2 viên + buổi chiều + mỗi ngày
+thuốc số 2: uống + 2 viên + buổi sáng + mỗi ngày
+thuốc số 3: uống + 1 viên + buổi sáng + và + 1 viên + buổi chiều + mỗi ngày
+
+Lưu ý:
+thuốc số 1: Uống đủ liều. Không tự ngưng.
+thuốc số 2: Không tự ngừng thuốc. Báo người lớn hoặc bác sĩ nếu thấy mệt nhiều, khó thở, đau bụng nặng.
+thuốc số 3: mỗi lần uống + cách nhau + 4-6 tiếng + không quá + 4 viên + mỗi ngày + uống nhiều + hại gan",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q006,Q006.png,"Dùng cho:
+bác sĩ kê thuốc + số 1 + Dùng cho người bị mỡ máu cao.
+
+Dùng như nào:
+uống + 1 viên + buổi tối + mỗi ngày
+
+Lưu ý:
+Theo dõi đau cơ, vàng da, đau bụng.",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q007,Q007.png,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + kháng sinh + uống đúng giờ
+thuốc số 2: bác sĩ kê thuốc + số 2 + giúp bạn + cảm thấy + dễ chịu hơn
+
+Dùng như nào:
+thuốc số 1: uống + 2 viên + buổi sáng + và + 2 viên + buổi tối + mỗi ngày
+thuốc số 2: uống + 1 viên + buổi sáng + và + 1 viên + buổi tối + mỗi ngày
+
+Lưu ý:
+thuốc số 1: dị ứng + phát ban + bệnh thận
+thuốc số 2: mỗi lần uống + cách nhau + 4-6 tiếng + không quá + 4 viên + mỗi ngày + uống nhiều + hại gan",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q008,Q008.png,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + người bị cao huyết áp
+thuốc số 2: bác sĩ kê thuốc + số 2 + người bị bệnh tâm thần phân liệt + người bị rối loạn lưỡng cực + người cần ổn định suy nghĩ và cảm xúc
+
+Dùng như nào:
+thuốc số 1: uống + 1 viên + buổi sáng + mỗi ngày
+thuốc số 2: uống + 1 viên + buổi tối + mỗi ngày
+
+Lưu ý:
+thuốc số 1: không dùng cho phụ nữ có thai + có thể gây chóng mặt + báo bác sĩ nếu sưng mặt hoặc khó thở
+thuốc số 2: uống đúng giờ + không tự ngừng + có thể gây buồn ngủ + báo bác sĩ khi có dấu hiệu nặng",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q009,Q009.png,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + Người bị tiểu đường típ 2 + Người cần giảm đường máu
+thuốc số 2: bác sĩ kê thuốc + số 2 + Dùng cho người bị tiểu đường típ 2.
+thuốc số 3: bác sĩ kê thuốc + số 3 + Người hay chóng mặt + Người đau đầu do tuần hoàn não kém + Người giảm trí nhớ nhẹ
+
+Dùng như nào:
+thuốc số 1: uống + 1 viên + buổi trưa + và + 1 viên + buổi tối + mỗi ngày
+thuốc số 2: uống + 3 viên + buổi sáng + mỗi ngày
+thuốc số 3: uống + 2 viên + buổi sáng + và + 2 viên + buổi chiều + mỗi ngày
+
+Lưu ý:
+thuốc số 1: Uống sau ăn + Theo dõi đường máu + Tránh rượu + Cẩn thận nếu bệnh thận
+thuốc số 2: Có thể làm đường trong máu xuống quá thấp nếu bỏ bữa.
+thuốc số 3: Uống đúng liều + Không tự ý dùng chung với thuốc loãng máu + Báo ngay khi có chảy máu",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q010,Q010.png,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + đau họng + giảm
+thuốc số 2: bác sĩ kê thuốc + số 2 + giúp bạn + cảm thấy + dễ chịu hơn
+thuốc số 3: bác sĩ kê thuốc + số 3 + dễ thở hơn + bớt ho + bớt hắt hơi + bớt sổ mũi
+
+Dùng như nào:
+thuốc số 1: uống + 2 viên + buổi sáng + và + 2 viên + buổi chiều + mỗi ngày
+thuốc số 2: uống + 2 viên + buổi sáng + và + 2 viên + buổi chiều + mỗi ngày
+thuốc số 3: uống + 1 viên + buổi tối + mỗi ngày
+
+Lưu ý:
+thuốc số 1: BẮT BUỘC + uống hết + đơn thuốc + KHÔNG + dừng thuốc sớm + có thể + tiêu chảy
+thuốc số 2: mỗi lần uống + cách nhau + 4-6 tiếng + không quá + 4 viên + mỗi ngày + uống nhiều + hại gan
+thuốc số 3: không cắt cơn hen cấp + uống đúng liều + báo bác sĩ khi có dấu hiệu lạ",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q011,Q011.jpg,"Dùng cho:
+bác sĩ kê thuốc + số 1 + Trị giun + Trị sán
+
+Dùng như nào:
+uống + 40 viên + mỗi ngày
+
+Lưu ý:
+Uống sau ăn + Đúng liều + Báo bác sĩ nếu có dấu hiệu lạ",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q012,Q012.jpg,"Dùng cho:
+bác sĩ kê thuốc + số 1 + bụng khỏe hơn + giảm tiêu chảy + giảm đầy bụng
+
+Dùng như nào:
+uống + 10 viên + mỗi ngày
+
+Lưu ý:
+dị ứng + sốt cao + mất nước",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q013,Q013.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + Người bị trào ngược dạ dày + Người bị viêm loét dạ dày + Người có nhiều axit dạ dày
+thuốc số 2: bác sĩ kê thuốc + số 2 + Dùng cho người bị loét hoặc viêm dạ dày.
+thuốc số 3: bác sĩ kê thuốc + số 3 + trẻ thiếu canxi + trẻ cần bổ sung canxi + trẻ cần vitamin D
+
+Dùng như nào:
+thuốc số 1: uống + 01 viên + buổi sáng + mỗi ngày
+thuốc số 2: uống + 60 viên + buổi sáng + và + 60 viên + buổi tối + mỗi ngày
+thuốc số 3: uống + 01 viên + buổi sáng + và + 01 viên + buổi tối + mỗi ngày
+
+Lưu ý:
+thuốc số 1: Uống trước ăn + Không tự dùng lâu ngày + Báo bác sĩ nếu có dấu hiệu nặng
+thuốc số 2: Uống khi bụng rỗng. Uống xa thuốc khác.
+thuốc số 3: uống sau ăn + không quá liều + báo bác sĩ nếu dị ứng",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q014,Q014.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + Họng + Tai + Mũi + Phổi + Da
+thuốc số 2: bác sĩ kê thuốc + số 2 + người cần tránh thai theo chỉ định bác sĩ
+thuốc số 3: bác sĩ kê thuốc + số 3 + Giảm sưng + Giảm đỏ + Giảm ngứa + Giảm dị ứng
+
+Dùng như nào:
+thuốc số 1: uống + 1 viên + mỗi ngày
+thuốc số 2: uống + 7 viên + mỗi ngày
+thuốc số 3: uống + 6 viên + mỗi ngày
+
+Lưu ý:
+thuốc số 1: Uống đúng liều + Uống đủ ngày + Không tự ngưng + Báo người lớn nếu mệt nhiều
+thuốc số 2: uống đúng giờ mỗi ngày + không ngừa bệnh lây tình dục + đi khám nếu có dấu hiệu nặng
+thuốc số 3: Không tự ngưng + Uống sau ăn + Báo bác sĩ nếu mệt nhiều",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q015,Q015.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + Trẻ bị bệnh do vi khuẩn + Dùng theo toa bác sĩ
+thuốc số 2: bác sĩ kê thuốc + số 2 + giúp bụng khỏe + giảm tiêu chảy + hỗ trợ tiêu hóa
+
+Dùng như nào:
+thuốc số 1: uống + 10 viên + mỗi ngày
+thuốc số 2: uống + 10 viên + mỗi ngày
+
+Lưu ý:
+thuốc số 1: Uống đúng giờ + Uống đủ số ngày + Không tự ngưng + Đi khám nếu khó thở hoặc nổi mẩn nhiều
+thuốc số 2: uống sau ăn + uống đủ nước + đi khám nếu nặng",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q016,Q016.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + uống sau ăn + đúng giờ + đủ liều + lắc kỹ
+thuốc số 2: bác sĩ kê thuốc + số 2 + Dùng cho bé bị khò khè, co thắt phế quản.
+thuốc số 3: bác sĩ kê thuốc + số 3 + người bị dị ứng + người bị ngứa + người bị nổi mẩn
+thuốc số 4: bác sĩ kê thuốc + số 4 + Trẻ hay ốm vặt + Trẻ dễ viêm mũi họng + Trẻ sức đề kháng yếu
+
+Dùng như nào:
+thuốc số 1: uống + 1 viên + mỗi ngày
+thuốc số 2: uống + 10 viên + mỗi ngày
+thuốc số 3: uống + 1 viên + mỗi ngày
+thuốc số 4: uống + 1 viên + buổi sáng + mỗi ngày
+
+Lưu ý:
+thuốc số 1: dị ứng thuốc + không trị virus + theo dõi tiêu chảy + đủ liệu trình
+thuốc số 2: Có thể làm run tay, tim đập nhanh. Nếu nặng hơn, đi khám ngay.
+thuốc số 3: có thể buồn ngủ + uống đúng liều + đi khám nếu nặng
+thuốc số 4: Uống đúng theo bác sĩ + Không tự ý tăng liều + Đi khám ngay nếu khó thở hoặc sưng mặt",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q017,Q017.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + viêm họng + viêm tai + viêm xoang + viêm phổi + nhiễm khuẩn da + nhiễm khuẩn răng + nhiễm khuẩn tiểu
+thuốc số 2: bác sĩ kê thuốc + số 2 + Bé bị nhiễm khuẩn do vi khuẩn + Dùng theo đơn bác sĩ + Thuốc không trị cúm hay cảm do virus
+thuốc số 3: bác sĩ kê thuốc + số 3 + Dùng cho bé bị dị ứng.
+thuốc số 4: bác sĩ kê thuốc + số 4 + Bụng khó chịu + Ăn khó tiêu + Đi ngoài nhẹ
+
+Dùng như nào:
+thuốc số 1: uống + 14 viên + mỗi ngày
+thuốc số 2: uống + 1 viên + buổi sáng + mỗi ngày
+thuốc số 3: uống + 1 viên + buổi sáng + và + 1 viên + buổi tối + mỗi ngày
+thuốc số 4: uống + 7 viên + mỗi ngày
+
+Lưu ý:
+thuốc số 1: uống sau ăn + uống đủ liều + không tự ngừng + tránh nếu dị ứng penicillin + đi khám nếu khó thở
+thuốc số 2: Uống đủ liều + Uống đúng giờ + Không tự ngưng thuốc + Đi khám ngay nếu khó thở hoặc nổi ban nhiều
+thuốc số 3: Có thể gây buồn ngủ. Dùng đúng liều.
+thuốc số 4: Đọc kỹ nhãn + Dùng đúng liều + Ngưng nếu dị ứng",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q018,Q018.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + viêm họng + viêm tai + viêm xoang + viêm phổi + nhiễm khuẩn da + nhiễm khuẩn răng + nhiễm khuẩn tiểu
+thuốc số 2: bác sĩ kê thuốc + số 2 + trẻ bị nhiễm khuẩn + viêm họng + viêm tai + viêm phổi
+thuốc số 3: bác sĩ kê thuốc + số 3 + Dùng cho bé bị dị ứng.
+thuốc số 4: bác sĩ kê thuốc + số 4 + Bụng khó chịu + Ăn khó tiêu + Đi ngoài nhẹ
+
+Dùng như nào:
+thuốc số 1: uống + 21 viên + buổi sáng + và + 21 viên + buổi tối + mỗi ngày
+thuốc số 2: uống + 1 viên + buổi sáng + mỗi ngày
+thuốc số 3: uống + 1 viên + buổi sáng + và + 1 viên + buổi tối + mỗi ngày
+thuốc số 4: uống + 7 viên + mỗi ngày
+
+Lưu ý:
+thuốc số 1: uống sau ăn + uống đủ liều + không tự ngừng + tránh nếu dị ứng penicillin + đi khám nếu khó thở
+thuốc số 2: uống đúng liều + lắc kỹ + uống đủ ngày + không tự ngừng
+thuốc số 3: Có thể gây buồn ngủ. Dùng đúng liều.
+thuốc số 4: Đọc kỹ nhãn + Dùng đúng liều + Ngưng nếu dị ứng",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q019,Q019.jpg,"Dùng cho:
+bác sĩ kê thuốc + số 1 + người thiếu sắt + người thiếu máu do thiếu sắt
+
+Dùng như nào:
+uống + 1 viên + buổi sáng + mỗi ngày
+
+Lưu ý:
+uống đúng liều + không tự uống thêm + để xa trẻ em",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q020,Q020.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + viêm họng + viêm tai + viêm xoang + viêm phổi + nhiễm khuẩn da + nhiễm khuẩn răng + nhiễm khuẩn tiểu
+thuốc số 2: bác sĩ kê thuốc + số 2 + Giảm sưng + Giảm đỏ + Giảm ngứa + Giảm dị ứng
+thuốc số 3: bác sĩ kê thuốc + số 3 + giảm kích động + giúp bình tĩnh + ổn định hành vi
+thuốc số 4: bác sĩ kê thuốc + số 4 + Bụng khó chịu + Ăn khó tiêu + Đi ngoài nhẹ
+
+Dùng như nào:
+thuốc số 1: uống + 21 viên + mỗi ngày
+thuốc số 2: uống + 15 viên + mỗi ngày
+thuốc số 3: uống + 10 viên + mỗi ngày
+thuốc số 4: uống + 7 viên + mỗi ngày
+
+Lưu ý:
+thuốc số 1: uống sau ăn + uống đủ liều + không tự ngừng + tránh nếu dị ứng penicillin + đi khám nếu khó thở
+thuốc số 2: Không tự ngưng + Uống sau ăn + Báo bác sĩ nếu mệt nhiều
+thuốc số 3: uống đúng giờ + không tự ngừng + theo dõi sốt cao + theo dõi co giật + cẩn thận buồn ngủ
+thuốc số 4: Đọc kỹ nhãn + Dùng đúng liều + Ngưng nếu dị ứng",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q021,Q021.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + giảm + nguy cơ + cao huyết áp
+thuốc số 2: bác sĩ kê thuốc + số 2 + Dùng cho người bị mỡ máu cao.
+
+Dùng như nào:
+thuốc số 1: uống + 1 viên + buổi sáng + mỗi ngày
+thuốc số 2: uống + 1 viên + buổi tối + mỗi ngày
+
+Lưu ý:
+thuốc số 1: uống + đều đặn + mỗi ngày + không + tự ý + ngừng thuốc
+thuốc số 2: Không dùng cho phụ nữ có thai. Báo bác sĩ nếu đau cơ hoặc vàng da.",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q022,Q022.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + Dùng cho người bị tiểu đường típ 2.
+thuốc số 2: bác sĩ kê thuốc + số 2 + Dùng cho người bị mỡ máu cao.
+thuốc số 3: bác sĩ kê thuốc + số 3 + giảm đau tê rát + giảm lo âu + hỗ trợ chống co giật
+
+Dùng như nào:
+thuốc số 1: uống + 1 viên + buổi sáng + mỗi ngày
+thuốc số 2: uống + 1 viên + buổi tối + mỗi ngày
+thuốc số 3: uống + 1 viên + mỗi ngày
+
+Lưu ý:
+thuốc số 1: Có thể làm đường trong máu xuống quá thấp nếu bỏ bữa.
+thuốc số 2: Không dùng cho phụ nữ có thai. Báo bác sĩ nếu đau cơ hoặc vàng da.
+thuốc số 3: dễ buồn ngủ + không ngưng đột ngột + tránh rượu",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q023,Q023.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + Dùng cho người bị tiểu đường típ 2.
+thuốc số 2: bác sĩ kê thuốc + số 2 + Người bị tiểu đường típ 2 + Người cần giảm đường máu
+thuốc số 3: bác sĩ kê thuốc + số 3 + Người bị huyết áp cao + Người cần bác sĩ kê thuốc hạ huyết áp
+thuốc số 4: bác sĩ kê thuốc + số 4 + Dùng cho người bị mỡ máu cao.
+
+Dùng như nào:
+thuốc số 1: uống + 3 viên + buổi sáng + mỗi ngày
+thuốc số 2: uống + 1 viên + buổi sáng + và + buổi tối + mỗi ngày
+thuốc số 3: uống + 1 viên + buổi sáng + mỗi ngày
+thuốc số 4: uống + 1 viên + buổi tối + mỗi ngày
+
+Lưu ý:
+thuốc số 1: Có thể làm đường trong máu xuống quá thấp nếu bỏ bữa.
+thuốc số 2: Uống sau ăn + Theo dõi đường máu + Tránh rượu + Cẩn thận nếu bệnh thận
+thuốc số 3: Không dùng cho người mang thai + Uống đúng giờ mỗi ngày + Nếu khó thở hoặc sưng mặt, đi cấp cứu
+thuốc số 4: Không dùng cho phụ nữ có thai. Báo bác sĩ nếu đau cơ hoặc vàng da.",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q024,Q024.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + Dùng cho người bị tiểu đường típ 2.
+thuốc số 2: bác sĩ kê thuốc + số 2 + Người bị tiểu đường típ 2 + Người cần giảm đường máu
+thuốc số 3: bác sĩ kê thuốc + số 3 + giảm + nguy cơ + cao huyết áp
+thuốc số 4: bác sĩ kê thuốc + số 4 + người bị cao huyết áp + người cần bảo vệ tim + người cần bảo vệ thận
+
+Dùng như nào:
+thuốc số 1: uống + 2 viên + buổi sáng + mỗi ngày
+thuốc số 2: uống + 1 viên + buổi sáng + và + buổi tối + mỗi ngày
+thuốc số 3: uống + 1 viên + buổi sáng + mỗi ngày
+thuốc số 4: uống + 1 viên + buổi tối + mỗi ngày
+
+Lưu ý:
+thuốc số 1: Có thể làm đường trong máu xuống quá thấp nếu bỏ bữa.
+thuốc số 2: Uống sau ăn + Theo dõi đường máu + Tránh rượu + Cẩn thận nếu bệnh thận
+thuốc số 3: uống + đều đặn + mỗi ngày + không + tự ý + ngừng thuốc
+thuốc số 4: không dùng cho người mang thai + uống đúng giờ + không tự ý ngừng",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q025,Q025.jpg,"Dùng cho:
+bác sĩ kê thuốc + số 1 + đau họng do vi khuẩn + đau tai do vi khuẩn + sốt do nhiễm khuẩn + viêm xoang + viêm phổi nhẹ theo đơn
+
+Dùng như nào:
+uống + 1 viên + buổi sáng + và + buổi chiều + và + buổi tối + mỗi ngày
+
+Lưu ý:
+uống đầu bữa ăn + uống đúng giờ + uống đủ đợt + không tự ngưng + đi khám nếu khó thở",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q026,Q026.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + đau họng do vi khuẩn + đau tai do vi khuẩn + sốt do nhiễm khuẩn + viêm xoang + viêm phổi nhẹ theo đơn
+thuốc số 2: bác sĩ kê thuốc + số 2 + Người bị viêm âm đạo do nấm hoặc vi khuẩn, theo đơn bác sĩ.
+
+Dùng như nào:
+thuốc số 1: uống + 1 viên + buổi sáng + và + 1 viên + buổi tối + mỗi ngày
+thuốc số 2: uống + 1 viên + buổi tối + mỗi ngày
+
+Lưu ý:
+thuốc số 1: uống đầu bữa ăn + uống đúng giờ + uống đủ đợt + không tự ngưng + đi khám nếu khó thở
+thuốc số 2: Chỉ đặt âm đạo. + Dùng đúng số ngày bác sĩ dặn. + Không dùng nếu bị dị ứng thuốc. + Đi khám nếu đau nhiều hoặc khó thở.",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q027,Q027.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + giúp bạn + cảm thấy + dễ chịu hơn
+thuốc số 2: bác sĩ kê thuốc + số 2 + Bù nước + Bù muối + Hỗ trợ khi tiêu chảy + Hỗ trợ khi nôn
+
+Dùng như nào:
+thuốc số 1: uống + 2 viên + buổi sáng + và + buổi chiều + mỗi ngày
+thuốc số 2: uống + mỗi ngày
+
+Lưu ý:
+thuốc số 1: mỗi lần uống + cách nhau + 4-6 tiếng + không quá + 4 viên + mỗi ngày + uống nhiều + hại gan
+thuốc số 2: Pha đúng nước + Không pha sai + Theo dõi dấu mất nước + Đi khám khi nặng",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q028,Q028.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + dùng khi bị nhiễm khuẩn do vi khuẩn + dùng theo đơn bác sĩ
+thuốc số 2: bác sĩ kê thuốc + số 2 + giúp bạn + cảm thấy + dễ chịu hơn
+
+Dùng như nào:
+thuốc số 1: uống + 1 viên + mỗi ngày
+thuốc số 2: uống + 1 viên + mỗi ngày
+
+Lưu ý:
+thuốc số 1: uống đúng giờ + uống đủ số ngày + không tự ý ngừng thuốc + báo bác sĩ nếu nổi ban hoặc khó thở
+thuốc số 2: mỗi lần uống + cách nhau + 4-6 tiếng + không quá + 4 viên + mỗi ngày + uống nhiều + hại gan",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q029,Q029.jpg,"Dùng cho:
+bác sĩ kê thuốc + số 1 + đau họng do vi khuẩn + đau tai do vi khuẩn + sốt do nhiễm khuẩn + viêm xoang + viêm phổi nhẹ theo đơn
+
+Dùng như nào:
+uống + 1 viên + mỗi ngày
+
+Lưu ý:
+uống đầu bữa ăn + uống đúng giờ + uống đủ đợt + không tự ngưng + đi khám nếu khó thở",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.
+Q030,Q030.jpg,"Dùng cho:
+thuốc số 1: bác sĩ kê thuốc + số 1 + Người bị huyết áp cao + Người cần bác sĩ kê thuốc hạ huyết áp
+thuốc số 2: bác sĩ kê thuốc + số 2 + Dùng cho người bị mỡ máu cao.
+
+Dùng như nào:
+thuốc số 1: uống + 1 viên + buổi sáng + mỗi ngày
+thuốc số 2: uống + 1 viên + buổi tối + mỗi ngày
+
+Lưu ý:
+thuốc số 1: Không dùng cho người mang thai + Uống đúng giờ mỗi ngày + Nếu khó thở hoặc sưng mặt, đi cấp cứu
+thuốc số 2: Không dùng cho phụ nữ có thai. Báo bác sĩ nếu đau cơ hoặc vàng da.",Evaluate gloss quality. 1 = not acceptable / seriously wrong / unsafe. 5 = very good / usable.,Optional: suggest corrections or explain the score.

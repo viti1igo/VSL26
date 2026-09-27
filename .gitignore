@@ -1,5 +1,55 @@
-/FATURA
-/FATURA2
-/models
-/public_test
-/public_train
+# Local environment and secrets
+.env
+.venv/
+venv/
+env/
+.venv-local-eval/
+.venv-venus13/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# OS/editor noise
+.DS_Store
+*.log
+
+# Local dataset discovery cache
+.dataset_path
+
+# Large model and dataset artifacts
+models/*
+!models/latest_layoutlmv3_vaipe_retrain.txt
+!models/layoutlmv3_vaipe_retrain_20260611_085133/
+!models/layoutlmv3_vaipe_retrain_20260611_085133/final/
+!models/layoutlmv3_vaipe_retrain_20260611_085133/final/**
+stage_2/
+public_train/
+public_test/
+vaipepill2022.zip
+FATURA/
+FATURA2/
+
+# SQLite knowledge base artifacts
+vaipe_drugs.db
+vaipe_drugs.db.backup_*
+
+# Downloaded/reference data artifacts
+data/
+survey_input/
+expert_survey/images/
+expert_survey/results_json/
+expert_survey/*.csv
+expert_survey/*.xlsx
+expert_survey/*.html
+layoutlmv3_review/
+
+# Generated outputs, with selected research artifacts kept
+results/*
+!results/pilot_manifest.md
+!results/pilot_video_editing_sheet.xlsx
+!results/vsl_footage_required.csv
+!results/wave1_apply_report.md
+!results/wave1_validation_report.md
+!results/pilot_subset_summary.md
+!results/final_drug_review_actions.csv

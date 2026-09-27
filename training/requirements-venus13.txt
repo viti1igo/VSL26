@@ -1,0 +1,9 @@
+accelerate>=0.30
+datasets>=2.19
+kagglehub>=0.3
+numpy>=1.24,<2.0
+pillow>=10.0
+safetensors>=0.4
+torch>=2.3,<2.8
+torchvision>=0.18,<0.23
+transformers>=4.41,<4.58
